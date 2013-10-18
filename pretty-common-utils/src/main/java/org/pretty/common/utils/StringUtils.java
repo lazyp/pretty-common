@@ -9,6 +9,22 @@ package org.pretty.common.utils;
  * @version 2013-10-14
  */
 public final class StringUtils {
+    public static final String EMPTY = "";
+
+    /**
+     * 去掉收尾空格 <code>
+     *  StringUtils.trim("  ") return "";
+     *  StringUtils.trim(" abc ") return "abc";
+     *  StringUtils.trim(null) return "";
+     * </code>
+     * @param str
+     * @return
+     */
+    public static String trim(String str) {
+        if (str == null) return EMPTY;
+        return str.trim();
+    }
+
     /**
      * <code>
      *  StringUtils.trimToNull("") return null;
