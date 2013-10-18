@@ -3,6 +3,8 @@
  */
 package org.pretty.common.utils;
 
+import java.nio.charset.Charset;
+
 /**
  * 字符串处理公具类
  * @author <a href="mailto:lazy_p@163.com">lazyp</a>
@@ -68,5 +70,39 @@ public final class StringUtils {
      */
     public static boolean isNotBlank(String str) {
         return !isBlank(str);
+    }
+
+    public static byte[] getBytesByCharset(String str, Charset charset) {
+        if (isNotBlank(str)) {
+            return str.getBytes(charset);
+        }
+        return null;
+    }
+
+    /**
+     * 获取UTF8编码的字节数组
+     * @param str
+     * @return
+     */
+    public static byte[] getUTF8Bytes(String str) {
+        return getBytesByCharset(str, Charset.forName("UTF-8"));
+    }
+
+    /**
+     * 获取GBK编码的字节数组
+     * @param str
+     * @return
+     */
+    public static byte[] getGBKBytes(String str) {
+        return getBytesByCharset(str, Charset.forName("GBK"));
+    }
+
+    /**
+     * 获取ISO-8859-1编码的字节数组
+     * @param str
+     * @return
+     */
+    public static byte[] getISO8859Bytes(String str) {
+        return getBytesByCharset(str, Charset.forName("ISO-8859-1"));
     }
 }
