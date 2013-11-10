@@ -9,6 +9,82 @@ package org.pretty.common.utils;
  * @version 2013-11-4
  */
 public final class ArrayUtils {
+
+    /**
+     * 数组是否包含元素t
+     * @param ar
+     * @param t
+     * @return
+     */
+    public static boolean isContains(int[] ar, int t) {
+        for (int i : ar) {
+            if (i == t) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 数组是否包含元素t
+     * @param ar
+     * @param t
+     * @return
+     */
+    public static boolean isContains(long[] ar, long t) {
+        for (long i : ar) {
+            if (i == t) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 数组是否包含元素t
+     * @param ar
+     * @param t
+     * @return
+     */
+    public static boolean isContains(float[] ar, float t) {
+        for (float i : ar) {
+            if (i == t) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 数组是否包含元素t
+     * @param ar
+     * @param t
+     * @return
+     */
+    public static boolean isContains(double[] ar, double t) {
+        for (double i : ar) {
+            if (i == t) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    /**
+     * 数组是否包含元素t
+     * @param ar
+     * @param t
+     * @return
+     */
+    public static boolean isContains(String[] ar, String t) {
+        for (String i : ar) {
+            if (i == t) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * 数组转化为一个字符串
      * @param ar
