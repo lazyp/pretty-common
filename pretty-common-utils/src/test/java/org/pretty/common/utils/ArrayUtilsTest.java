@@ -13,4 +13,11 @@ public class ArrayUtilsTest {
         String[] ar = new String[] { "a", "b", "c" };
         Assert.assertEquals(ArrayUtils.join(ar, ','), "a,b,c");
     }
+
+    @Test
+    public void isContainsTest() {
+        String[] ar = new String[] { "a", "b", "c" };
+        Assert.assertEquals(ArrayUtils.isContains(ar, "b"), true);
+        Assert.assertEquals(ArrayUtils.isContains(ar, "d"), false);
+    }
 }
