@@ -72,6 +72,19 @@ public final class StringUtils {
         return !isBlank(str);
     }
 
+    /**
+     * 字符串第一个字符大写
+     * @param str
+     * @return
+     */
+    public static String firstCharToUpperCase(String str) {
+        if (isNotBlank(str)) {
+            char firstChar = str.charAt(0);
+            return String.valueOf(firstChar).toUpperCase() + str.substring(1);
+        }
+        return str;
+    }
+
     public static byte[] getBytesByCharset(String str, Charset charset) {
         if (isNotBlank(str)) {
             return str.getBytes(charset);

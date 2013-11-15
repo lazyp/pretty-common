@@ -21,5 +21,6 @@ public final class StringUtilsTest {
         Assert.assertEquals(StringUtils.isBlank(null), true);
         Assert.assertEquals(StringUtils.isNotBlank(" "), false);
         Assert.assertEquals(StringUtils.isNotBlank("abc"), true);
+        Assert.assertEquals(StringUtils.firstCharToUpperCase("hello"), "Hello");
     }
 }
