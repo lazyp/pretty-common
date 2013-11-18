@@ -4,6 +4,7 @@
 package org.pretty.common.utils;
 
 import java.nio.charset.Charset;
+import java.util.Locale;
 
 /**
  * 字符串处理公具类
@@ -80,7 +81,20 @@ public final class StringUtils {
     public static String firstCharToUpperCase(String str) {
         if (isNotBlank(str)) {
             char firstChar = str.charAt(0);
-            return String.valueOf(firstChar).toUpperCase() + str.substring(1);
+            return String.valueOf(firstChar).toUpperCase(Locale.ENGLISH) + str.substring(1);
+        }
+        return str;
+    }
+
+    /**
+     *  字符串第一个字符转为小写
+     * @param str
+     * @return
+     */
+    public static String firstCharToLowerCase(String str) {
+        if (isNotBlank(str)) {
+            char firstChar = str.charAt(0);
+            return String.valueOf(firstChar).toLowerCase(Locale.ENGLISH) + str.substring(1);
         }
         return str;
     }
