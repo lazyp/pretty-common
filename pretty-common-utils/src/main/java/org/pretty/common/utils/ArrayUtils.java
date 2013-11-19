@@ -78,7 +78,7 @@ public final class ArrayUtils {
      */
     public static boolean isContains(String[] ar, String t) {
         for (String i : ar) {
-            if (i == t) {
+            if (i.equals(t)) {
                 return true;
             }
         }

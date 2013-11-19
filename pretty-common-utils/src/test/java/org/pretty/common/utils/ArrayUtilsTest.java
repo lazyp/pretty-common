@@ -16,8 +16,9 @@ public class ArrayUtilsTest {
 
     @Test
     public void isContainsTest() {
-        String[] ar = new String[] { "a", "b", "c" };
-        Assert.assertEquals(ArrayUtils.isContains(ar, "b"), true);
+        String[] ar = new String[] { "abcd", "bd", "ce" };
+        String s = "abcd";
+        Assert.assertEquals(ArrayUtils.isContains(ar, s), true);
         Assert.assertEquals(ArrayUtils.isContains(ar, "d"), false);
     }
 }
