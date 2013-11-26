@@ -4,7 +4,6 @@
 package org.pretty.common.utils;
 
 /**
- * 操作系统相关的工具方法
  * @author <a href="mailto:lazy_p@163.com">lazyp</a>
  * @version 2013-10-15
  */
@@ -31,6 +30,14 @@ public final class OsUtils {
      */
     public static String getOsArch() {
         return System.getProperty("os.arch");
+    }
+
+    /**
+     * 获取cpu逻辑线程数
+     * @return
+     */
+    public static int getCpuLogicalThreads() {
+        return Runtime.getRuntime().availableProcessors();
     }
 
     public static void main(String[] args) {
