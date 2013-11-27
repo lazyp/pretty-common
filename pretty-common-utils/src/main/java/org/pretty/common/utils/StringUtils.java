@@ -87,7 +87,7 @@ public final class StringUtils {
     }
 
     /**
-     *  字符串第一个字符转为小写
+     * 字符串第一个字符转为小写
      * @param str
      * @return
      */
