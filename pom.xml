@@ -8,7 +8,7 @@
   	<module>pretty-common-utils</module>
   </modules>
   <properties>
-      <maven.repo>file://${basedir}/maven-repo</maven.repo>
+      <maven.repo>file://G://gitworkspace/maven-repo</maven.repo>
   </properties>
   <distributionManagement>
 	<repository>
