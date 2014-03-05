@@ -5,6 +5,7 @@
   <version>1.0</version>
   <packaging>pom</packaging>
   <modules>
+    <module>pretty-common-algorithm</module>
   	<module>pretty-common-utils</module>
   </modules>
   <properties>
