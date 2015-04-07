@@ -8,6 +8,8 @@
     <module>pretty-common-algorithm</module>
   	<module>pretty-common-utils</module>
   </modules>
+  
+  <!--  
   <properties>
       <maven.repo>file://G://gitworkspace/maven-repo</maven.repo>
   </properties>
@@ -18,4 +20,5 @@
 	    <url>${maven.repo}</url>
 	</repository>      
   </distributionManagement>
+ -->
 </project>
