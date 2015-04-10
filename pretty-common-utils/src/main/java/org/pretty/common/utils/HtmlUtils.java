@@ -15,7 +15,7 @@ public final class HtmlUtils {
      * @return
      */
     public static String removeHtmlTag(String html) {
-        if (StringUtils.isBlank(html)) {
+        if (StrUtils.isBlank(html)) {
             return html;
         }
         html = html.replaceAll("<[^>]+>", "");

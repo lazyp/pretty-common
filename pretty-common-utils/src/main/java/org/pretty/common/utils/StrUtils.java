@@ -11,7 +11,7 @@ import java.util.Locale;
  * @author <a href="mailto:lazy_p@163.com">lazyp</a>
  * @version 2013-10-14
  */
-public final class StringUtils {
+public final class StrUtils {
     public static final String EMPTY = "";
 
     /**
