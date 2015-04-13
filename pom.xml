@@ -8,6 +8,7 @@
 	<modules>
 		<module>pretty-common-algorithm</module>
 		<module>pretty-common-utils</module>
+		<module>pretty-common-constant</module>
 	</modules>
 
 	<build>
