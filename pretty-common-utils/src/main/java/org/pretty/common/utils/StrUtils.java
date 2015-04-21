@@ -3,6 +3,7 @@
  */
 package org.pretty.common.utils;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Locale;
 
@@ -13,6 +14,22 @@ import java.util.Locale;
  */
 public final class StrUtils {
     public static final String EMPTY = "";
+    
+    public static String newUTF8String(byte[] bytes){
+        try {
+            return new String(bytes , "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    
+    public static String newGBKString(byte[] bytes){
+        try {
+            return new String(bytes , "GBK");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     /**
      * 去掉收尾空格 <code>
