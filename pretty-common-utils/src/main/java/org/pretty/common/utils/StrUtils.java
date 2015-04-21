@@ -22,6 +22,14 @@ public final class StrUtils {
             throw new RuntimeException(e);
         }
     }
+    
+    public static String newGBKString(byte[] bytes){
+        try {
+            return new String(bytes , "GBK");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     /**
      * 去掉收尾空格 <code>
